@@ -11,7 +11,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>440,1514</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>563.3333333333334,1514</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Futbin_UserInput_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -105,7 +105,9 @@
     <ui:LogMessage DisplayName="Log Message - save user input" sap:VirtualizedContainerService.HintSize="388,96" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Start Futbin_UserInput...&quot;]" />
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ApplicationLayer\Futbin_Open.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="ApplicationLayer\Futbin_Open.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="in_BreNotOpened" />
+        <InArgument x:TypeArguments="x:String" x:Key="in_BreNotOpened">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Nothing" />
+        </InArgument>
         <InArgument x:TypeArguments="x:String" x:Key="in_futbinUrl">
           <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_config(&quot;futbinUrl&quot;).ToString" />
         </InArgument>
@@ -116,74 +118,42 @@
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Futbin_NavigateToPage.xaml - Players - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="ApplicationLayer\Futbin_NavigateToPage.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="ui:Browser" x:Key="in_futbinBrowser">
-          <VisualBasicValue x:TypeArguments="ui:Browser" ExpressionText="out_futbinBrowser" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_futbinUrl">
-          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_config(&quot;futbinUrl&quot;).ToString" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_pageUrl">
-          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_config(&quot;playersUrl&quot;).ToString" />
-        </InArgument>
+        <InArgument x:TypeArguments="ui:Browser" x:Key="in_futbinBrowser">[out_futbinBrowser]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_futbinUrl">[in_config("futbinUrl").ToString]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_pageUrl">[in_config("playersUrl").ToString]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ApplicationLayer\Futbin_SaveTopLeagues.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ApplicationLayer\Futbin_SaveTopLeagues.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtLeagues">
-          <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtLeagues" />
-        </OutArgument>
-        <InArgument x:TypeArguments="ui:Browser" x:Key="in_futbinBrowser">
-          <VisualBasicValue x:TypeArguments="ui:Browser" ExpressionText="out_futbinBrowser" />
-        </InArgument>
+        <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtLeagues">[dtLeagues]</OutArgument>
+        <InArgument x:TypeArguments="ui:Browser" x:Key="in_futbinBrowser">[out_futbinBrowser]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Futbin_NavigateToPage.xaml - Squad Builder - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="ApplicationLayer\Futbin_NavigateToPage.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="ui:Browser" x:Key="in_futbinBrowser">
-          <VisualBasicValue x:TypeArguments="ui:Browser" ExpressionText="out_futbinBrowser" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_futbinUrl">
-          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_config(&quot;futbinUrl&quot;).ToString" />
-        </InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_pageUrl">
-          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_config(&quot;squadUrl&quot;).ToString" />
-        </InArgument>
+        <InArgument x:TypeArguments="ui:Browser" x:Key="in_futbinBrowser">[out_futbinBrowser]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_futbinUrl">[in_config("futbinUrl").ToString]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_pageUrl">[in_config("squadUrl").ToString]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ApplicationLayer\Futbin_SaveFormations.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="ApplicationLayer\Futbin_SaveFormations.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtFormations">
-          <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="dtFormations" />
-        </OutArgument>
-        <InArgument x:TypeArguments="ui:Browser" x:Key="in_futbinBrowser">
-          <VisualBasicValue x:TypeArguments="ui:Browser" ExpressionText="out_futbinBrowser" />
-        </InArgument>
+        <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtFormations">[dtFormations]</OutArgument>
+        <InArgument x:TypeArguments="ui:Browser" x:Key="in_futbinBrowser">[out_futbinBrowser]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="InputData.xaml - League - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="DataLayer\InputData.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtOptions">
-          <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="dtLeagues" />
-        </InArgument>
-        <OutArgument x:TypeArguments="x:String" x:Key="out_selectedOption">
-          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="out_selectedLeague" />
-        </OutArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_selection">
-          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_config(&quot;selectLeague&quot;).ToString" />
-        </InArgument>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtOptions">[dtLeagues]</InArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_selectedOption">[out_selectedLeague]</OutArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_selection">[in_config("selectLeague").ToString]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="InputData.xaml - Formation - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="DataLayer\InputData.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtOptions">
-          <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="dtFormations" />
-        </InArgument>
-        <OutArgument x:TypeArguments="x:String" x:Key="out_selectedOption">
-          <VisualBasicReference x:TypeArguments="x:String" ExpressionText="out_selectedFormation" />
-        </OutArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_selection">
-          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_config(&quot;selectFormation&quot;).ToString" />
-        </InArgument>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dtOptions">[dtFormations]</InArgument>
+        <OutArgument x:TypeArguments="x:String" x:Key="out_selectedOption">[out_selectedFormation]</OutArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_selection">[in_config("selectFormation").ToString]</InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ApplicationLayer\Futbin_Close.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="ApplicationLayer\Futbin_Close.xaml">
