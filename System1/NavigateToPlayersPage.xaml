@@ -1,0 +1,107 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="NavigateToPlayersPage" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="563.3333333333334,595.3333333333334" sap2010:WorkflowViewState.IdRef="NavigateToPlayersPage_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="46">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="NavigateToPlayersPage" sap:VirtualizedContainerService.HintSize="546,530.6666666666666" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome: FIFA 23 Ultimate Team Prices, Squad B" sap:VirtualizedContainerService.HintSize="484,420" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="079c839c-6918-4e17-8dab-225604bedb2c" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,200.66666666666666" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="388,84.66666666666667" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://www.futbin.com/22/players" Version="V3" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="J74XlkkKFU2UW0LgtD3cPA" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAACUlBMVEVUxq1Txa1TxaxTxKxSxKtSw6tRwqpRwqlQwalRw6pRwalQwahTxq1TxqxSxaxRxKtQwqpQwqlQwKhxzru15ty45923592359y35ty25tu35dt5z71OwKdPwKel39T///+W2ctMv6ZPv6dVxq7C6eKV2cpMvqVPv6Zlyrbj9PL4/Pzz+vnz+/ny+/ny+vmQ18hOvqaK1sj6/f2q4ddyzrx1z710z710zr10zrxzzrxzzrtyzrpxzblxzLlxzLhwy7hcxK1OvqWx5Nrz+vp30L9QxatRxKxQw6pPwqlPwahOwKhNv6ZNvqZOvaVZx7DM7efT7utcyLFPwKhNvaVwzrvu+Pep4NZNvKSa28/+/v/8/f6L1shRxaxSw6q6597n9PVqy7hjybRWxa5NvaRMvKRfybPZ8e7A5+JUxa5Vxa255d645d1mybVMu6N+0sL2+/uk3tRcx7Fxzbvn9fTZ8O2G08So4Nbq9/be8+/l9fP9/v6v4dhhxbFWxq7E6uPW7+t5zbxNvqVoy7fm9fPy+fm449xwybeO18r7/f7K6+av49nC6OK249t4zbxQv6dMvaWy5Nvv+PhxzLtMwaiS18q349t5zb1RwKhax7DP7unM6uhYxK6n3tS65Nx4zLtQvqdMvKNzz73w+fik3tNfxbBTwamd3NH6/fyK1sW859/k9fFry7ZgybPc8e+65t1Vw6uB08P3/Pz8/v6S2MlOwaj1+/p5zr1Xxq7G6+Td8e9exbBmyrbY8e3v+vfu+ffw+viq39ZYx69rzbhrzLdqy7ZbxK6OiJt2AAACKklEQVQ4T3WTZ38SQRCHN5FQAiwBS6KCZ04FS4KnsceGDZCchVMRuwa72HuLJYklJvbee++9oSbxe7k7N8vxE/2/u32evRlmOPK/FBR2MBWZLVZ8zAtwm7nYjs8sDmdOKDW5bCVuq92DlBDasVPnLkZKS8vKunbr7vUhZkIPKT89y2XEhPTqjYe56eMPICbOvv3gqP8APRWVlcFgxUC/gpzQQYNBqBoydNjwESNHVVePHjN23HglhJzQCcAnTppMp7hc4ZJIdKo3VlOjqMjJtOkgzJjp0CdgsdrjsqKoGnI6azYIc2h2Qh45wHhCCHOTnM+bv4AWmooWmi2My0pISwjBsQhesHgJXbrMxlfg8bECWm0ihXz5ChBWrlq9Zu26CHJWIJXWBbp+AwgbN23eIm3dVhzHBhJpIWwHLu3YuWu3JAX37I3JyFHYt18XROoOHOQNpoTgPHQYiZ76hkZNZQ0yrgv0yFF+njx2vIkNvP5Ec8tJLCCEU3Dx9Jmz55LB8xcu+kUDQrh0GYQrV93Xrt+46Q/AhG4ZAr19B4S7EfO9+7EAnwA2IIQHwB8+iliiHn1FogCWeAzCk6duXJGqZjkXHM+eg/DiJfsTw4r+Euir15y/efsOVhDSalUVKQsXquAF7z94xYqM+yB8/ATC5y++eHZFRticv377nslkfvxk9/M5Ewp+tba2tbW3/45DA/qKjPDP1BUOu6NRznMnhBGfMf+F/yiQTv8BnQrafMrGp0AAAAAASUVORK5CYII=" InformativeScreenshot="d178fd5f91ba59d1928eb040f3d64def.jpg" Reference="ofWf1mfBrkqIrQ_gS94YIA/LlRStwiay0iTT7BZ9JDntQ" Selector="&lt;html app='chrome.exe' title='FIFA 23 Ultimate Team Prices, Squad Builder, Draft and Players Database | FUTBIN' /&gt;" Title="FIFA 23 Ultimate Team Prices, Squad Builder, Draft and Players Database | FUTBIN" Url="https://www.futbin.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
